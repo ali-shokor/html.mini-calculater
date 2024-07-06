@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
-        <title>Calculater</title>
     </head>
     <body>
-        <audio id="audio" src="search-ms:displayname=Search%20Results%20in%20Desktop&crumb=location:C%3A%5CUsers%5CDell%5CDesktop\sounds.mp3" type="audio/mpeg"></audio>
-        <div id="calculater">
+        <audio id="audio" src="sounds.mp3" type="audio/mpeg"></audio>
+        <div id="calculator">
             <input id="display" readonly>
             <div id="keys">
                 <button onclick="appendToDisplay('+'); playAudio()" class="operation">+</button>
@@ -27,11 +27,10 @@
                 <button onclick="appendToDisplay('/'); playAudio()" class="operation">/</button>
                 <button onclick="appendToDisplay('0'); playAudio()">0</button>
                 <button onclick="appendToDisplay('.'); playAudio()">.</button>
-                <button onclick="calculate('='); playAudio()">=</button>
-                <button onclick="clear1('C'); playAudio()" class="operation">C</button>
+                <button onclick="calculate(); playAudio()">=</button>
+                <button onclick="clear1(); playAudio()" class="operation">C</button>
             </div>
         </div>
         <script src="script.js"></script>
     </body>
 </html>
-<br />

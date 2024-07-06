@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <title>Calculater</title>
+    </head>
+    <body>
+        <audio id="audio" src="search-ms:displayname=Search%20Results%20in%20Desktop&crumb=location:C%3A%5CUsers%5CDell%5CDesktop\sounds.mp3" type="audio/mpeg"></audio>
+        <div id="calculater">
+            <input id="display" readonly>
+            <div id="keys">
+                <button onclick="appendToDisplay('+'); playAudio()" class="operation">+</button>
+                <button onclick="appendToDisplay('7'); playAudio()">7</button>
+                <button onclick="appendToDisplay('8'); playAudio()">8</button>
+                <button onclick="appendToDisplay('9'); playAudio()">9</button>
+                <button onclick="appendToDisplay('-'); playAudio()" class="operation">-</button>
+                <button onclick="appendToDisplay('4'); playAudio()">4</button>
+                <button onclick="appendToDisplay('5'); playAudio()">5</button>
+                <button onclick="appendToDisplay('6'); playAudio()">6</button>
+                <button onclick="appendToDisplay('*'); playAudio()" class="operation">*</button>
+                <button onclick="appendToDisplay('1'); playAudio()">1</button>
+                <button onclick="appendToDisplay('2'); playAudio()">2</button>
+                <button onclick="appendToDisplay('3'); playAudio()">3</button>
+                <button onclick="appendToDisplay('/'); playAudio()" class="operation">/</button>
+                <button onclick="appendToDisplay('0'); playAudio()">0</button>
+                <button onclick="appendToDisplay('.'); playAudio()">.</button>
+                <button onclick="calculate('='); playAudio()">=</button>
+                <button onclick="clear1('C'); playAudio()" class="operation">C</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+<br />
